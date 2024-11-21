@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>casssch music</title>
+    <link rel="icon" href="images/background.JPG" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Home Section -->
+    <div class="section fade" id="home" alt="belgrade skyline at night">
+        <h1>casssch music</h1>
+        <nav>
+            <a href="#artists">artists</a>
+            <a href="#music">music</a>
+            <a href="#merch">merch</a>
+        </nav>
+    </div>
+
+    <!-- Artists Section -->
+    <div class="section fade" id="artists">
+        <h2>artists</h2>
+        <div class="carousel">
+            <button class="arrow left" onclick="moveSlide('artists', -1)">&#8249;</button>
+            <div class="carousel-items">
+                <div class="carousel-item">
+                    <img src="images/syphia.jpg" alt="syphia">
+                    <a href="https://ffm.to/syphia">syphia</a>
+                </div>
+            </div>
+            <button class="arrow right" onclick="moveSlide('artists', 1)">&#8250;</button>
+        </div>
+    </div>
+
+    <!-- Music Section -->
+    <div class="section fade" id="music">
+        <h2>music</h2>
+        <div class="carousel">
+            <button class="arrow left" onclick="moveSlide('music', -1)">&#8249;</button>
+            <div class="carousel-items">
+                <div class="carousel-item">
+                    <img src="images/dissolved.jpg" alt="dissolved album cover">
+                    <a href="https://ffm.to/syphiadissolved">dissolved - syphia - SCH00001</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/neweras.jpg" alt="new eras album cover">
+                    <a href="https://ffm.to/syphianeweras">new eras - syphia - SCH00002</a>
+                </div>
+            </div>
+            <button class="arrow right" onclick="moveSlide('music', 1)">&#8250;</button>
+        </div>
+    </div>
+
+    <!-- Merch Section -->
+    <div class="section fade" id="merch">
+        <h2>merch</h2>
+        <div class="carousel">
+            <button class="arrow left" onclick="moveSlide('merch', -1)">&#8249;</button>
+            <div class="carousel-items">
+                <div class="carousel-item">
+                    <img src="images/neweras.jpg" alt="new eras album cover">
+                    <a href="https://syphia.bandcamp.com/album/new-eras">new eras files + unreleased bonus track - syphia</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/dissolved.jpg" alt="dissolved album cover">
+                    <a href="https://syphia.bandcamp.com/album/dissolved">dissolved files - syphia</a>
+                </div>
+            </div>
+            <button class="arrow right" onclick="moveSlide('merch', 1)">&#8250;</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 casssch. all rights reserved.</p>
+        <a href="mailto:cass@cass.li">cass@cass.li</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
